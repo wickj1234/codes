@@ -1,0 +1,234 @@
+******************  index.html  ****************
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/display_data.js"></script>
+    <script src="js/myscript.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+    <main class="mt-5 pt-3">
+        <div class="container">
+            <div class="container-fluid px-4">
+                <div class="row g-3 my-2">
+                    <div class="rounded">
+                        <div class="h1 my-4 text-center border">Login Form</div>
+                        <form id="studentForm"> 
+                            <div class="border p-3">
+                                <div class="row">
+                                    <div class="col-md-6 mt-md-3 mt-3"> 
+                                        <label>First Name</label>
+                                        <input type="text" id="firstName" class="form-control" required/>
+                                    </div>
+                                    <div class="col-md-6 mt-md-3 mt-3">
+                                        <label>Last Name</label>
+                                        <input type="text" id="lastName" class="form-control" required />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mt-md-3 mt-3">
+                                        <label>Birth Date</label>
+                                        <input type="date" id="dob" class="form-control" required />
+                                    </div>
+                                    <div class="col-md-6 mt-md-3 mt-3">
+                                        <label>Gender</label>
+                                        <div class="d-flex align-items-center mt-2"> 
+                                            <label class="option">
+                                                <input type="radio" name="gender" value="Male" />
+                                                Male <span class="checkmarks"></span>
+                                            </label>
+                                            <label class="option ms-4">
+                                                <input type="radio" name="gender" value="Female" />
+                                                Female<span class="checkmarks"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-grid">
+                                    <button class="btn btn-primary btn-lg" id="btnAddStudent" type="button">
+                                        Add student
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+**********************  display-data.html  ***************
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/myscript.js"></script>
+    <script src="js/display_data.js"></script>
+    <title>Registration form-Display-Data</title>
+</head>
+<body>
+    <main class="mt-5 pt-3">
+     <div class="text-center">
+      <i class="bi bi-emoji-smile fs-1 text-primary"></i>
+     </div>
+     <div class="container">
+        <div class="h1 my-4 text-center border">Student Data</div>
+        <div class="row my-5">
+        <div class="card">
+        
+        
+     </div>
+     <div class="card-body">
+        <h5 class="card-title fw-bold text-upperscase">
+         <span id="firstName"></span>
+         <span id="lastName"></span>
+        </h5>
+        <small class="text-uppercase fw-bold text-muted">
+            Personal Information
+        </small>
+        <hr/>
+        
+        <p class="card-text fs-6 fw-bold">
+            <i class="bi bi-calendar-date me-2"></p></i>
+            Date of Birth: <span id="dob">NA</span>
+            </p>
+            
+        <p class="card-text fs-6 fw-bold">
+            <i class="bi bi-people me-2"></p></i>
+            Gender: <span id="gender">NA</span>
+        
+    </div>
+</div>
+</div>
+</main>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/jquery-3.5.1.js"></script>    
+<script src="display-data.js"></script>
+              
+</body>
+</html>
+
+
+
+
+
+
+
+
+###############  creat folder names js and paste following files in it####################
+
+
+*************   myscript.js  ********************
+
+
+$(document).ready(function () {
+ 
+
+  $("#btnAddStudent").click(function () {
+    
+    function getStudentData() {
+      let date = new Date($("#dob").val());
+      day = date.getDate();
+      month = date.getMonth() + 1;
+      year = date.getFullYear();
+      let dob = [day, month, year].join("/"); 
+     
+
+      let student = {
+        firstName: $("#firstName").val(),
+        lastName: $("#lastName").val(),
+        dob: dob,
+        gender: $("input[name='gender']:checked").val(),
+       
+      };
+      $("#studentForm")[0].reset();
+      return student;
+    }
+
+    
+    function storeDataToLocalStorage() {
+      if (!localStorage.getItem("student")) {
+        localStorage.setItem("student", JSON.stringify(getStudentData()));
+      } else {
+        localStorage.removeItem("student");
+        localStorage.setItem("student", JSON.stringify(getStudentData()));
+      }
+    }
+
+    
+    function sendData() {
+      let xhr = new XMLHttpRequest();
+      let data = JSON.stringify(getStudentData());
+      xhr.open("POST", "http://localhost:4000/storedata",true);
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.send(data);
+    }
+
+    storeDataToLocalStorage();
+  
+      window.location.href="display-data.html"
+  });
+});
+
+
+
+
+
+
+
+
+
+
+*****************   display_data.js   **************
+
+
+$(document).ready(function () {
+  getData();
+});
+
+function getData() {
+  let localStorageData = localStorage.getItem("student");
+  let studentObj = JSON.parse(localStorageData);
+  console.log(studentObj);
+  $("#rollno").text(studentObj.rollno);
+  $("#firstName").text(studentObj.firstName);
+  $("#lastName").text(studentObj.lastName);
+  $("#dob").text(studentObj.dob);
+  $("#gender").text(studentObj.gender);
+}
+

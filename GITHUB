@@ -1,0 +1,12 @@
+creat the ripository in github account
+ 
+
+ls
+cd "file path"
+git init
+git remote add origin repository link
+git remote -v
+git add .
+git commit -m "anyy name say my first commit"
+git push origin master
+git help

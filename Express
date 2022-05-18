@@ -1,0 +1,30 @@
+Steps:-
+
+1) Creat folder and open cmd there
+2) npm insatll express
+3) npm install -g nodemon --save -dev
+4) open folder in visual studio
+5) create public and index.js folder and file
+
+
+
+
+
+
+
+#################  index.js #####################
+
+
+const path=require('path');
+var express=require('express');
+var app=express();
+const filepath=path.join(__dirname,"../public");
+
+app.use(express.static("public"));
+var server=app.listen(8080,function(){
+    console.log("started server")
+});
+
+
+
+in terminal node index.js
